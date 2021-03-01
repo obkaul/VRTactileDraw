@@ -2,7 +2,7 @@
 
 # VRTactileDraw
 
-![Figure 1 from the paper](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/figure1.jpg)
+![Figure 1 from the paper](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/figure1.png)
 
 ## Summary
 
