@@ -68,17 +68,28 @@ To use one of the already imported presets, activate it in Unity while disabling
 
 ### Editing the default presets
 If you want to add more actuators, remove actuators or edit the position of them on the model, do so with Unity. Drag the actuators where you wish for them to be positioned and make sure they are not inside of the model. On starting the application, the actuators will snap to the model. 
-**Important:** Give each actuator a unique ID in Unity! Setting an actuator id can be done in the Inspector:
+**Important:** Give each actuator a unique ID in Unity! 
+
+Setting an actuator id can be done in the Inspector:
+
 ![VibratorId](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/VibratorId.png)
+
 You can choose the actuator IDs freely. However, the IDs have to be distinct.
 
 ### Importing your own models
 If you have a model, you can [import](https://docs.unity3d.com/Manual/ImportingAssets.html) it via Unity and place it in the work area. Ensure that your model has a Mesh Renderer, Mesh Collider, and uses the Intensity Display script.
-![Components](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/model_components.png)
- Each model has its own ActuatorHolder in which all the actuators are positioned:
+
+![Components](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/ModelComponents.png)
+ 
+Each model has its own ActuatorHolder in which all the actuators are positioned:
+ 
 ![ActuatorHolder](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/ActuatorHolder.png)
+
 Additionally, the ActuatorHolder has the VibratorMesh script attached to it.
+
 ![ActuatorHolderScript](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/ActuatorHolderScript.png)
+
+
 ### Adding actuators to your model
 Use the Actuator.prefab to add actuators to your model's ActuatorHolder and drag them in position via Unity's scene viewer. The snapping is done automatically on start. Ensure the actuators are not inside your model and each actuator has a unique ID.
 
