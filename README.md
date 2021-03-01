@@ -2,6 +2,8 @@
 
 # VRTactileDraw
 
+![Figure 1 from the paper](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/figure1.jpg)
+
 ## Summary
 
 This project aims to simplify creating intricate tactile patterns (TPs) for actuators placed in complex configurations on (parts of) the human body. Instead of writing files such as [this](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Pattern.json) by hand, you can ease the work by using this project to import (part of) a human body model, place actuators on it, and then draw a TP it via VR controllers. It's as simple as drawing a stroke in Paint! The program will handle the generation of a dedicated JSON file Pattern.json for the actuators, which can later be used to load and replay the generated TP.
@@ -62,7 +64,7 @@ There are three presets already imported into the project:
 * MultiWave full-body model
 ![FullBodyModelMW](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/FullBodyModelMW.png)
 
-To use one of the already imported presets, activate it in Unity while disabling all the others.
+To use one of the already imported presets, activate it in Unity while disabling all the others. 
 
 ### Editing the default presets
 If you want to add more actuators, remove actuators or edit the position of them on the model, do so with Unity. Drag the actuators where you wish for them to be positioned and make sure they are not inside of the model. On starting the application, the actuators will snap to the model. 
