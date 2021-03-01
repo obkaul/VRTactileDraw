@@ -94,7 +94,7 @@ Additionally, the ActuatorHolder has the VibratorMesh script attached to it.
 Use the Actuator.prefab to add actuators to your model's ActuatorHolder and drag them in position via Unity's scene viewer. The snapping is done automatically on start. Ensure the actuators are not inside your model and each actuator has a unique ID.
 
 ## Instructions on usage
-When starting the project, you will find yourself in front of a slider. Use your VR controller to create a new TP. Use the trigger button to interact with objects. While working on a TP, it will continuously be saved to [Application.persistentDataPath] (https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html)/Patterns/ (e.g., %USERNAME%\AppData\LocalLow\HCI Group, LUH\VRTactileDraw\Patterns on Windows).
+When starting the project, you will find yourself in front of a slider. Use your VR controller to create a new TP. Use the trigger button to interact with objects. While working on a TP, it will continuously be saved to [Application.persistentDataPath](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html) /Patterns/ (e.g., %USERNAME%\AppData\LocalLow\HCI Group, LUH\VRTactileDraw\Patterns on Windows).
 You can select a previously saved TP from the initial slider menu replay or extend it.
 After creating or opening a TP to modify, the selected model with the actuators will spawn, and you can use your VR controller to draw TPs on it.
 
