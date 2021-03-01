@@ -1,103 +1,96 @@
 
 
-# VR-Pattern-TactileDraw
+# VRTactileDraw
 
 ## Summary
 
-
-The idea behind this project is to simplify the process of creating pattern for actuators that are places on (parts of) the human body. Instead of writing files such as [this](https://github.com/USER/vrtactiledraw/tree/master/assets/examples/Pattern.json) by hand you can ease the work by using this project to import (part of) a human body model, place actuators on it and then draw it via VR controller. The program will handle the generation of the Pattern.json for the actuators.
+This project aims to simplify creating intricate tactile patterns (TPs) for actuators placed in complex configurations on (parts of) the human body. Instead of writing files such as [this](https://github.com/obkaul/VRTactileDraw/tree/main/assets/examples/Pattern.json) by hand, you can ease the work by using this project to import (part of) a human body model, place actuators on it, and then draw it via VR controllers. The program will handle the generation of a dedicated JSON file Pattern.json for the actuators, which can later be used to load or play the generated TP.
 
 ## Features
-* Creation of patterns in vr to use in real world prototypes using a raspberry to access vibration motors
-* Reflection paint mode enabling the user to draw while generating a mirrored stroke to make symmetrical patterns
+* Creation of TPs in VR to use in real-world prototypes using a Raspberry PI to drive vibration motors
+* Reflection paint mode enabling the user to draw while generating a mirrored stroke to make symmetrical TPs
 * Automatic detection of actuators with a unique ID
-* Automatic generation of easy to use .json files for the patterns
+* Automatic generation of easy to use .json files for the TPs
 * Modular protocol implementation for actuators
-* Utility such as loop mode, stroke time editing etc.
+* Utility such as loop mode, stroke time editing, etc.
 
 ## Download and Installation
 
 ### Requirements
 
-First you need the necessary hardware of course. To use this project you need a working VR headset and a computer to run the project on. You require 
-* [Unity](https://store.unity.com/)
+First, you'll need the necessary hardware. To use this project, you need a working VR headset and a computer to run the project. You require 
+* [Unity version 2019.3.7.f1 or higher](https://store.unity.com/)
 * [.NET Framework 4+](https://www.microsoft.com/en-us/download/details.aspx?id=55170) and 
 * [Steam](https://store.steampowered.com/)
  
 
 ### Download
  
+Simply [download](https://github.com/obkaul/VRTactileDraw.git) the project as a zip file and unzip it on your computer.
 
-Simply [download](https://github.com/USER/vrtactiledraw.git) the project as zip and unzip it on your computer.
 
 ### Installation
 
-The project itself does not require additional installation, however if you are unfamiliar with the process of installing the required software or unfamiliar with updating Unity packages (they should usually keep themselves up-to-date) you can find guides here:
-
-Additionally you can also change the standard protocol for your raspberry. For details refer to the "Protocol" section.
+The project itself does not require an additional installation. Copy the project onto your hard drive and open it in Unity. 
 
 ## Protocol
 
-The default protocol that is already implemented in th RaspberryCommandSender defines the packet structure as a (optional 200 byte) 104 byte array:
+The default protocol that is already implemented in the RaspberryCommandSender file defines the packet structure as a 104-byte array:
 
 * first 4 bytes as checksum defined as the sum of all following values
 
 * next 4 bytes as the packet number, starting from 0 and increasing by 1 for each new packet
 
-* 24x4 bytes - 32-bit integer values in range 0-255. This is directly mapped to the intesities/amplitude of the actuators in % where 0 maps to 0% and 255 to 100%
-
-* optional: 24x4 bytes - 32-bit integer values in range 0-65535. This is directly mapped to actuator frequency in Hz. Will be ignored if 0.
+* 24x4 bytes - 32-bit integer values in range 0-255. These numbers are directly mapped to the intensities/amplitude of the actuators in percent, where 0 maps to 0% and 255 to 100%.
 
   
 
-The frequency part is optional as normal vibration actuators do not require frequency adjustments.
-
-  
-
-If you want to change this protocol you can implement your own in the [RaspberryCommandSender.cs](https://github.com/USER/vrtactiledraw/tree/master/assets/patterndesigner/scripts/controller/raspberrycommandsender.cs)
+If you want to change this protocol, you can implement your own in the [RaspberryCommandSender.cs](https://github.com/obkaul/VRTactileDraw/tree/main/assets/patterndesigner/scripts/controller/raspberrycommandsender.cs)
 
 
 ## Instructions on model usage
 
 ###  Already imported presets
-After downloading all required software and the project itself you can open the project with Unity.
-There are currently four presets alredy imported into the project:
+After downloading all required software and the project itself, you can open the project with Unity.
+There are four presets already imported into the project:
 * A full body model
-![FullBodyModel](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/FullBodyModel.png)
-* MultiWave full body model
-![FullBodyModelMW](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/FullBodyModelMW.png)
-* HapticHead full body model
-![FullBodyModelHH](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/FullBodyModelHH.png)
+![FullBodyModel](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/FullBodyModel.png)
+* MultiWave full-body model
+![FullBodyModelMW](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/FullBodyModelMW.png)
+* HapticHead full-body model
+![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/FullBodyModelHH.png)
 * Arm model
-![ArmModel](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/ArmModel.png)
+![ArmModel](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/ArmModel.png)
 
-To use one of the already imported presets activate it in Unity while disabling all the others.
+To use one of the already imported presets, activate it in Unity while disabling all the others.
 
 ### Editing the default presets
-If you want to add more actuators, remove actuators or simply edit the position of them on the model, do so with Unity. Drag the actuators where you wish for them to be positioned and make sure they are not inside of the model. On start the actuators will snap to the model. 
-**Important:** Give each actuator a unique ID in Unity! This can be done in the Inspector:
-![VibratorId](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/VibratorId.png)
-The IDs can be chosen freely, however the important part is the IDs being distinct.
+If you want to add more actuators, remove actuators or edit the position of them on the model, do so with Unity. Drag the actuators where you wish for them to be positioned and make sure they are not inside of the model. On starting the application, the actuators will snap to the model. 
+**Important:** Give each actuator a unique ID in Unity! Setting an actuator id can be done in the Inspector:
+![VibratorId](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/VibratorId.png)
+You can choose the actuator IDs freely. However, the IDs have to be distinct.
 
 ### Importing your own models
-If you have a model you can [import](https://docs.unity3d.com/Manual/ImportingAssets.html) it via Unity and place it in the work area. Make sure that your model has a Mesh Renderer, Mesh Collider and uses the Intensity Display script.
-![Components](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/model_components.png)
+If you have a model, you can [import](https://docs.unity3d.com/Manual/ImportingAssets.html) it via Unity and place it in the work area. Ensure that your model has a Mesh Renderer, Mesh Collider, and uses the Intensity Display script.
+![Components](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/model_components.png)
  Each model has its own ActuatorHolder in which all the actuators are positioned:
-![ActuatorHolder](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/ActuatorHolder.png)
-Additionally the ActuatorHolder has the VibratorMesh script attached to it.
-![ActuatorHolderScript](https://github.com/USER/vrtactiledraw/tree/master/assets/ExamplesAndImages/ActuatorHolderScript.png)
-### Adding actuators to your own model
-Use the Actuator.prefab to add actuators to your model's ActuatorHolder and drag them in position via the scene viewer in Unity. The snapping is done automatically on start. Make sure the actuators are not inside of your model and each of the actuators has a unique ID.
+![ActuatorHolder](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/ActuatorHolder.png)
+Additionally, the ActuatorHolder has the VibratorMesh script attached to it.
+![ActuatorHolderScript](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/ActuatorHolderScript.png)
+### Adding actuators to your model
+Use the Actuator.prefab to add actuators to your model's ActuatorHolder and drag them in position via Unity's scene viewer. The snapping is done automatically on start. Ensure the actuators are not inside your model and each actuator has a unique ID.
 
 ## Instructions on usage
-When starting the project you will find yourself in front of a slider. Use your vr controller to create a new pattern. Use the trigger button to interact with objects. After creating the pattern it will be automatically saved to %user%\AppData\LocalLow\HCI Group, LUH\HapticHead\Patterns and can be selected from the slider menu for future uses.
-After creating or opening the pattern to use, the selected model with the actuators will spawn and you can use your vr controller to draw patterns on it.
+When starting the project, you will find yourself in front of a slider. Use your VR controller to create a new TP. Use the trigger button to interact with objects. While working on a TP, it will continuously be saved to [Application.persistentDataPath](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html)/Patterns/ (e.g., %user%\AppData\LocalLow\HCI Group, LUH\VRTactileDraw\Patterns on Windows).
+You can select a previously saved TP from the initial slider menu replay or extend it.
+After creating or opening the TP to use, the selected model with the actuators will spawn, and you can use your VR controller to draw TPs on it.
 
 ## Project Links
-* Issues: https://github.com/USER/vrtactiledraw/issues
-* Paper: 
+* Issues: https://github.com/obkaul/VRTactileDraw/issues
+* Paper: TODO include paper link
+
 ## Other
-Due to the current project structure you have to make sure that the PaintMode is disabled in Unity on start as the project will crash otherwise.
+Due to the current project structure, you have to ensure that the PaintMode is disabled in Unity on start as the project will crash otherwise.
   
   
 
@@ -111,4 +104,4 @@ Maximilian Schrapel
 Human-Computer Interaction Group, Leibniz University Hannover, Hannover, Germany
 
 ## Contact
-
+Oliver Beren Kaul([beren@kaul.me](mailto:beren@kaul.me))
