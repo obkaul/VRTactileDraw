@@ -54,15 +54,13 @@ If you want to change this protocol, you can implement your own in the [Raspberr
 
 ###  Already imported presets
 After downloading all required software and the project itself, you can open the project with Unity.
-There are four presets already imported into the project:
+There are three presets already imported into the project:
 * A full body model
 ![FullBodyModel](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/FullBodyModel.png)
 * MultiWave full-body model
 ![FullBodyModelMW](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/FullBodyModelMW.png)
-* HapticHead full-body model
-![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/FullBodyModelHH.png)
-* Arm model
-![ArmModel](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/ArmModel.png)
+* HapticHead head model
+![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/HeadModelHH.png)
 
 To use one of the already imported presets, activate it in Unity while disabling all the others.
 
@@ -95,7 +93,7 @@ Use the Actuator.prefab to add actuators to your model's ActuatorHolder and drag
 
 ## Instructions on usage
 When starting the project, you will find yourself in front of a slider. Use your VR controller to create a new TP. Use the trigger button to interact with objects. While working on a TP, it will continuously be saved to [Application.persistentDataPath](https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html) /Patterns/ (e.g., %USERNAME%\AppData\LocalLow\HCI Group, LUH\VRTactileDraw\Patterns on Windows).
-You can select a previously saved TP from the initial slider menu replay or extend it.
+You can select a previously saved TP from the initial slider menu to replay or extend it.
 After creating or opening a TP to modify, the selected model with the actuators will spawn, and you can use your VR controller to draw TPs on it.
 
 ## Project Links
