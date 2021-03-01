@@ -55,12 +55,12 @@ If you want to change this protocol, you can implement your own in the [Raspberr
 ###  Already imported presets
 After downloading all required software and the project itself, you can open the project with Unity.
 There are three presets already imported into the project:
+* HapticHead head model
+![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/HeadModelHH.png)
 * A full body model
 ![FullBodyModel](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/FullBodyModel.png)
 * MultiWave full-body model
 ![FullBodyModelMW](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/FullBodyModelMW.png)
-* HapticHead head model
-![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/HeadModelHH.png)
 
 To use one of the already imported presets, activate it in Unity while disabling all the others.
 
