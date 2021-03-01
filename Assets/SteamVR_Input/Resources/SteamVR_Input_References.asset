@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d10323487cb44348b830bc017eb40b4, type: 3}
+  m_Name: SteamVR_Input_References
+  m_EditorClassIdentifier: 
+  actionSetNames:
+  - _default
+  - platformer
+  - buggy
+  - htc_viu
+  - ui_input
+  actionSetObjects:
+  - {fileID: 11400000, guid: 473387a44b38813439c6bc20c2ab22d3, type: 2}
+  - {fileID: 11400000, guid: 051a7a310b365334ab2ec1d38ebe60da, type: 2}
+  - {fileID: 11400000, guid: c150eb9c0b5824449ae18eb1af8fb431, type: 2}
+  - {fileID: 11400000, guid: a12d2d9af9bf4a84fb644c10841dc16e, type: 2}
+  - {fileID: 11400000, guid: 63756ddfa27d00d4394d86a49a506fc2, type: 2}
+  actionNames:
+  - __actions_default_in_InteractUI
+  - __actions_default_in_GrabPinch
+  - __actions_default_in_GrabGrip
+  - __actions_default_in_Pose
+  - __actions_default_in_SkeletonLeftHand
+  - __actions_default_in_SkeletonRightHand
+  - __actions_default_in_Squeeze
+  - __actions_default_in_TouchpadNavigate
+  - __actions_default_in_TouchTouchPad
+  - __actions_default_in_ClickTouchpad
+  - __actions_default_in_ResetMenu
+  - __actions_default_in_Confirm
+  - __actions_default_out_Haptic
+  - __actions_platformer_in_Move
+  - __actions_platformer_in_Jump
+  - __actions_buggy_in_Steering
+  - __actions_buggy_in_Throttle
+  - __actions_buggy_in_Brake
+  - __actions_buggy_in_Reset
+  - __actions_htc_viu_in_viu_press_00
+  - __actions_htc_viu_in_viu_press_01
+  - __actions_htc_viu_in_viu_press_02
+  - __actions_htc_viu_in_viu_press_03
+  - __actions_htc_viu_in_viu_press_04
+  - __actions_htc_viu_in_viu_press_05
+  - __actions_htc_viu_in_viu_press_06
+  - __actions_htc_viu_in_viu_press_07
+  - __actions_htc_viu_in_viu_press_31
+  - __actions_htc_viu_in_viu_press_32
+  - __actions_htc_viu_in_viu_press_33
+  - __actions_htc_viu_in_viu_press_34
+  - __actions_htc_viu_in_viu_touch_00
+  - __actions_htc_viu_in_viu_touch_01
+  - __actions_htc_viu_in_viu_touch_02
+  - __actions_htc_viu_in_viu_touch_03
+  - __actions_htc_viu_in_viu_touch_04
+  - __actions_htc_viu_in_viu_touch_05
+  - __actions_htc_viu_in_viu_touch_06
+  - __actions_htc_viu_in_viu_touch_07
+  - __actions_htc_viu_in_viu_touch_31
+  - __actions_htc_viu_in_viu_touch_32
+  - __actions_htc_viu_in_viu_touch_33
+  - __actions_htc_viu_in_viu_touch_34
+  - __actions_htc_viu_in_viu_axis_0x
+  - __actions_htc_viu_in_viu_axis_0y
+  - __actions_htc_viu_in_viu_axis_1x
+  - __actions_htc_viu_in_viu_axis_1y
+  - __actions_htc_viu_in_viu_axis_2x
+  - __actions_htc_viu_in_viu_axis_2y
+  - __actions_htc_viu_in_viu_axis_3x
+  - __actions_htc_viu_in_viu_axis_3y
+  - __actions_htc_viu_in_viu_axis_4x
+  - __actions_htc_viu_in_viu_axis_4y
+  - __actions_htc_viu_in_viu_axis_0xy
+  - __actions_htc_viu_in_viu_axis_1xy
+  - __actions_htc_viu_in_viu_axis_2xy
+  - __actions_htc_viu_in_viu_axis_3xy
+  - __actions_htc_viu_in_viu_axis_4xy
+  - __actions_htc_viu_out_viu_vib_01
+  - __actions_ui_input_in_Navigate
+  - __actions_ui_input_in_NavigateClick
+  - __actions_ui_input_in_Confirm
+  - __actions_ui_input_in_Show
+  - __actions_ui_input_out_Haptic
+  actionObjects:
+  - {fileID: 11400000, guid: 601b0a66ff83f2c4aa9fde017390f6d4, type: 2}
+  - {fileID: 11400000, guid: be3ae3ec49aefe640bf4d117715ea503, type: 2}
+  - {fileID: 11400000, guid: b245f74188c9c254c958f8474119403c, type: 2}
+  - {fileID: 11400000, guid: 25670b2c86757144087d212e4d64d6ee, type: 2}
+  - {fileID: 11400000, guid: 52a9f641ec200c74aa9c0e8c80f10160, type: 2}
+  - {fileID: 11400000, guid: 314894017e487094fa7707df8150ffaf, type: 2}
+  - {fileID: 11400000, guid: e0ba517767804b743a953cc8d31ef79c, type: 2}
+  - {fileID: 11400000, guid: e2dd9770877274a4292fe4e723e012e7, type: 2}
+  - {fileID: 11400000, guid: 0ba890809b1ca51459808bb9c9ddd568, type: 2}
+  - {fileID: 11400000, guid: 3a22345cd63026c4aa52cc2d51ba26d4, type: 2}
+  - {fileID: 11400000, guid: 216e7fdf0c827e14ba52ea450fc31a3c, type: 2}
+  - {fileID: 11400000, guid: d1b7bfbb499bd4c4db885e5a0704dbb4, type: 2}
+  - {fileID: 11400000, guid: b827742948769de4394eff768008f5c3, type: 2}
+  - {fileID: 11400000, guid: 62f21319474a47445b962479357ca111, type: 2}
+  - {fileID: 11400000, guid: 4108e7a85dd185041a9aac1504b7493b, type: 2}
+  - {fileID: 11400000, guid: a019776e5e5f1324bb1b64ea94b89da6, type: 2}
+  - {fileID: 11400000, guid: c6d4cce7b2d37d14c9b4ca960560241f, type: 2}
+  - {fileID: 11400000, guid: eb496dd9213a6be42819a805901b029a, type: 2}
+  - {fileID: 11400000, guid: 0f49aca1a3f2c5045877a87cffeb6d84, type: 2}
+  - {fileID: 11400000, guid: 4be64fcc469cb114084ad1b6767701ab, type: 2}
+  - {fileID: 11400000, guid: aeaa6eb22869fd04997d107ae21ca386, type: 2}
+  - {fileID: 11400000, guid: c6340a284261b6540b21a83b48364ff9, type: 2}
+  - {fileID: 11400000, guid: 00602ac6bf1e66b4caf62f71f65b812a, type: 2}
+  - {fileID: 11400000, guid: 3a538c96c14ad2b4e838569c3d99fd00, type: 2}
+  - {fileID: 11400000, guid: 3665f9045da022340a085cab0a886708, type: 2}
+  - {fileID: 11400000, guid: 329ced298010c124b9d7f75d0c3f6ee0, type: 2}
+  - {fileID: 11400000, guid: 7807017d0e7f9354281eb12e67748685, type: 2}
+  - {fileID: 11400000, guid: 9715a8ff5b001934bb641a44dd37135d, type: 2}
+  - {fileID: 11400000, guid: 6df326be2fd698e4fb721b298de867e9, type: 2}
+  - {fileID: 11400000, guid: 11eb9c6cc6d5f5d44aed2e55589a4837, type: 2}
+  - {fileID: 11400000, guid: 924a41ef134f54e44b25df17621c157f, type: 2}
+  - {fileID: 11400000, guid: 7048c78226e8b0e43ae85a8babbee4a0, type: 2}
+  - {fileID: 11400000, guid: 94ca1224d922ac14a8ff91cadb9e7102, type: 2}
+  - {fileID: 11400000, guid: a761901727143c641adbd6ca00fa7af3, type: 2}
+  - {fileID: 11400000, guid: f903806826e717d488dcf33705dade47, type: 2}
+  - {fileID: 11400000, guid: c4acbe2b23038b1439b287f2ab36e09a, type: 2}
+  - {fileID: 11400000, guid: 472d450ef7870244da9a43cfcf9228cb, type: 2}
+  - {fileID: 11400000, guid: f8f392d6e1f5b1d42a55336b5b84e4dd, type: 2}
+  - {fileID: 11400000, guid: 13cfd5396c30e5042a1a468a608660a9, type: 2}
+  - {fileID: 11400000, guid: bc954a1468c656940aa31de3a87b0004, type: 2}
+  - {fileID: 11400000, guid: 1ae8a87792f39b74cacd9a94ab3a9109, type: 2}
+  - {fileID: 11400000, guid: dd5ebd1e0e6f0b64fbdf728c63ed39fd, type: 2}
+  - {fileID: 11400000, guid: c06f35086585e394bbb2e339a033f7b1, type: 2}
+  - {fileID: 11400000, guid: 0df566a275d109a4d94a0ec1877d0b0a, type: 2}
+  - {fileID: 11400000, guid: b43f1e9266b24d141834adfd409037ad, type: 2}
+  - {fileID: 11400000, guid: 7447f1c84a5e50d4fb187cd74f0725cc, type: 2}
+  - {fileID: 11400000, guid: af2fde001ac39c44a9a602d49b2fb71f, type: 2}
+  - {fileID: 11400000, guid: aca6b28ae63c79a46b9145adb44e45ce, type: 2}
+  - {fileID: 11400000, guid: 31ab9e105b6924a489ccf53bc26df6b6, type: 2}
+  - {fileID: 11400000, guid: 2848a795589a0fc44b5000563fbf790c, type: 2}
+  - {fileID: 11400000, guid: f912a06bce3b5434f89218c95455aa9c, type: 2}
+  - {fileID: 11400000, guid: ea72c3189b55549428403312380b19b7, type: 2}
+  - {fileID: 11400000, guid: db1618d37f3aef845896d46d7c214a23, type: 2}
+  - {fileID: 11400000, guid: 11716156c41b11b42a3bd0d3cb08017f, type: 2}
+  - {fileID: 11400000, guid: 65a0f8bf120b5854fa99bab9447a8056, type: 2}
+  - {fileID: 11400000, guid: dfbe32453c4879243a9f344f9e7f8d6f, type: 2}
+  - {fileID: 11400000, guid: 257ed4c108d7e9b4e8f65f7a3f1e9af6, type: 2}
+  - {fileID: 11400000, guid: d2b38990d5c1a9e489c43862ec26e235, type: 2}
+  - {fileID: 11400000, guid: 3eba5f7960a245246b08612c49fa16ce, type: 2}
+  - {fileID: 11400000, guid: 1e1f11d5a49255149b0843d808387325, type: 2}
+  - {fileID: 11400000, guid: 7168577553791944687c209551d1dd4c, type: 2}
+  - {fileID: 11400000, guid: 8fe156f96ab6ea64dbf4de950fa48d4f, type: 2}
+  - {fileID: 11400000, guid: 437dd527e6b7c5546a3c61f7f52a0cba, type: 2}
+  - {fileID: 11400000, guid: 73ba1cb1dafc51d4b918e536cad668ca, type: 2}

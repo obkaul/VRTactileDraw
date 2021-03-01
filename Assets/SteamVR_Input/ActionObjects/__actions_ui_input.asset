@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26010a3f5f22818409dbe5750fd8734d, type: 3}
+  m_Name: __actions_ui_input
+  m_EditorClassIdentifier: 
+  allActions:
+  - {fileID: 11400000, guid: 1e1f11d5a49255149b0843d808387325, type: 2}
+  - {fileID: 11400000, guid: 7168577553791944687c209551d1dd4c, type: 2}
+  - {fileID: 11400000, guid: 8fe156f96ab6ea64dbf4de950fa48d4f, type: 2}
+  - {fileID: 11400000, guid: 437dd527e6b7c5546a3c61f7f52a0cba, type: 2}
+  - {fileID: 11400000, guid: 73ba1cb1dafc51d4b918e536cad668ca, type: 2}
+  nonVisualInActions:
+  - {fileID: 11400000, guid: 1e1f11d5a49255149b0843d808387325, type: 2}
+  - {fileID: 11400000, guid: 7168577553791944687c209551d1dd4c, type: 2}
+  - {fileID: 11400000, guid: 8fe156f96ab6ea64dbf4de950fa48d4f, type: 2}
+  - {fileID: 11400000, guid: 437dd527e6b7c5546a3c61f7f52a0cba, type: 2}
+  visualActions: []
+  poseActions: []
+  skeletonActions: []
+  outActionArray:
+  - {fileID: 11400000, guid: 73ba1cb1dafc51d4b918e536cad668ca, type: 2}
+  fullPath: /actions/ui_input
+  usage: single
+  inActions: {fileID: 11400000, guid: 6bab0a0e4afabd64090457a2062e3296, type: 2}
+  outActions: {fileID: 11400000, guid: b3d82f72cc9370941884216ffc8b4689, type: 2}

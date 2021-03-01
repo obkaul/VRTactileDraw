@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 302fd8052a9302a4e94a2a91352f7990, type: 3}
+  m_Name: SteamVR_Input_ActionSet_ui_input_In
+  m_EditorClassIdentifier: 
+  actionSet: {fileID: 0}
+  listDirection: 0
+  actions:
+  - {fileID: 11400000, guid: 1e1f11d5a49255149b0843d808387325, type: 2}
+  - {fileID: 11400000, guid: 7168577553791944687c209551d1dd4c, type: 2}
+  - {fileID: 11400000, guid: 8fe156f96ab6ea64dbf4de950fa48d4f, type: 2}
+  - {fileID: 11400000, guid: 437dd527e6b7c5546a3c61f7f52a0cba, type: 2}
+  Navigate: {fileID: 11400000, guid: 1e1f11d5a49255149b0843d808387325, type: 2}
+  NavigateClick: {fileID: 11400000, guid: 7168577553791944687c209551d1dd4c, type: 2}
+  Confirm: {fileID: 11400000, guid: 8fe156f96ab6ea64dbf4de950fa48d4f, type: 2}
+  Show: {fileID: 11400000, guid: 437dd527e6b7c5546a3c61f7f52a0cba, type: 2}

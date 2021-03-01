@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24c5a46e8ffb84459e59bed5219f565, type: 3}
+  m_Name: SteamVR_Input_ActionSet_default_In
+  m_EditorClassIdentifier: 
+  actionSet: {fileID: 0}
+  listDirection: 0
+  actions:
+  - {fileID: 11400000, guid: 601b0a66ff83f2c4aa9fde017390f6d4, type: 2}
+  - {fileID: 11400000, guid: be3ae3ec49aefe640bf4d117715ea503, type: 2}
+  - {fileID: 11400000, guid: b245f74188c9c254c958f8474119403c, type: 2}
+  - {fileID: 11400000, guid: 25670b2c86757144087d212e4d64d6ee, type: 2}
+  - {fileID: 11400000, guid: 52a9f641ec200c74aa9c0e8c80f10160, type: 2}
+  - {fileID: 11400000, guid: 314894017e487094fa7707df8150ffaf, type: 2}
+  - {fileID: 11400000, guid: e0ba517767804b743a953cc8d31ef79c, type: 2}
+  - {fileID: 11400000, guid: e2dd9770877274a4292fe4e723e012e7, type: 2}
+  - {fileID: 11400000, guid: 0ba890809b1ca51459808bb9c9ddd568, type: 2}
+  - {fileID: 11400000, guid: 3a22345cd63026c4aa52cc2d51ba26d4, type: 2}
+  - {fileID: 11400000, guid: 216e7fdf0c827e14ba52ea450fc31a3c, type: 2}
+  - {fileID: 11400000, guid: d1b7bfbb499bd4c4db885e5a0704dbb4, type: 2}
+  InteractUI: {fileID: 11400000, guid: 601b0a66ff83f2c4aa9fde017390f6d4, type: 2}
+  GrabPinch: {fileID: 11400000, guid: be3ae3ec49aefe640bf4d117715ea503, type: 2}
+  GrabGrip: {fileID: 11400000, guid: b245f74188c9c254c958f8474119403c, type: 2}
+  Pose: {fileID: 11400000, guid: 25670b2c86757144087d212e4d64d6ee, type: 2}
+  SkeletonLeftHand: {fileID: 11400000, guid: 52a9f641ec200c74aa9c0e8c80f10160, type: 2}
+  SkeletonRightHand: {fileID: 11400000, guid: 314894017e487094fa7707df8150ffaf, type: 2}
+  Squeeze: {fileID: 11400000, guid: e0ba517767804b743a953cc8d31ef79c, type: 2}
+  TouchpadNavigate: {fileID: 11400000, guid: e2dd9770877274a4292fe4e723e012e7, type: 2}
+  TouchTouchPad: {fileID: 11400000, guid: 0ba890809b1ca51459808bb9c9ddd568, type: 2}
+  ClickTouchpad: {fileID: 11400000, guid: 3a22345cd63026c4aa52cc2d51ba26d4, type: 2}
+  ResetMenu: {fileID: 11400000, guid: 216e7fdf0c827e14ba52ea450fc31a3c, type: 2}
+  Confirm: {fileID: 11400000, guid: d1b7bfbb499bd4c4db885e5a0704dbb4, type: 2}
