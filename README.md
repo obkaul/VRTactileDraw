@@ -1,12 +1,12 @@
 
 
-# VRTactileDraw
+# VRTactileDraw: A Virtual Reality Tactile Pattern Designer for Complex Spatial Arrangements of Actuators
 
 ![Figure 1 from the paper](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Images/figure1.png)
 
 ## Summary
 
-This project aims to simplify creating intricate tactile patterns (TPs) for actuators placed in complex configurations on (parts of) the human body. Instead of writing files such as [this](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Pattern.json) by hand, you can ease the work by using this project to import (part of) a human body model, place actuators on it, and then draw a TP it via VR controllers. It's as simple as drawing a stroke in Paint! The program will handle the generation of a dedicated JSON file Pattern.json for the actuators, which can later be used to load and replay the generated TP.
+Creating tactile patterns on the body via a spatial arrangement of many tactile actuators offers many opportunities and presents a challenge, as the design space is enormous. This Unity project, released as open-source alongside our paper, presents a VR interface that enables designers to rapidly prototype complex tactile interfaces. It allows for painting strokes on a modeled body part and translates these strokes into continuous tactile patterns using an interpolation algorithm. The presented VR approach avoids several problems of traditional 2D editors. It realizes spatial 3D input using VR controllers with natural mapping and intuitive spatial movements. To evaluate this approach in detail, we conducted two user studies and iteratively improved the system. The study participants gave predominantly positive feedback on the presented VR interface (SUS score 79.7, AttrakDiff "desirable"). The final system is released alongside this paper as an open-source Unity project for various tactile hardware. Please see our paper TODO insert link! for details!
 
 ## Features
 * Creation of TPs in VR to use in real-world prototypes using a Raspberry Pi or other hardware to drive vibration motors
