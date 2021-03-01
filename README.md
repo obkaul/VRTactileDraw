@@ -4,24 +4,26 @@
 
 ## Summary
 
-This project aims to simplify creating intricate tactile patterns (TPs) for actuators placed in complex configurations on (parts of) the human body. Instead of writing files such as [this](https://github.com/obkaul/VRTactileDraw/tree/main/assets/examples/Pattern.json) by hand, you can ease the work by using this project to import (part of) a human body model, place actuators on it, and then draw it via VR controllers. The program will handle the generation of a dedicated JSON file Pattern.json for the actuators, which can later be used to load or play the generated TP.
+This project aims to simplify creating intricate tactile patterns (TPs) for actuators placed in complex configurations on (parts of) the human body. Instead of writing files such as [this](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/Pattern.json) by hand, you can ease the work by using this project to import (part of) a human body model, place actuators on it, and then draw a TP it via VR controllers. It's as simple as drawing a stroke in Paint! The program will handle the generation of a dedicated JSON file Pattern.json for the actuators, which can later be used to load and replay the generated TP.
 
 ## Features
-* Creation of TPs in VR to use in real-world prototypes using a Raspberry PI to drive vibration motors
+* Creation of TPs in VR to use in real-world prototypes using a Raspberry Pi or other hardware to drive vibration motors
+* Real-time tactile feedback while drawing, ability to replay patterns
 * Reflection paint mode enabling the user to draw while generating a mirrored stroke to make symmetrical TPs
 * Automatic detection of actuators with a unique ID
 * Automatic generation of easy to use .json files for the TPs
 * Modular protocol implementation for actuators
 * Utility such as loop mode, stroke time editing, etc.
+* For more information, please see our Paper at: TODO include paper link
 
 ## Download and Installation
 
 ### Requirements
 
 First, you'll need the necessary hardware. To use this project, you need a working VR headset and a computer to run the project. You require 
-* [Unity version 2019.3.7.f1 or higher](https://store.unity.com/)
-* [.NET Framework 4+](https://www.microsoft.com/en-us/download/details.aspx?id=55170) and 
-* [Steam](https://store.steampowered.com/)
+* [Unity version 2019.3.7.f1 or higher](https://unity.com/)
+* [.NET Framework 4+](https://www.microsoft.com/en-us/download/details.aspx?id=17851) and 
+* [SteamVR](https://store.steampowered.com/)
  
 
 ### Download
@@ -45,7 +47,7 @@ The default protocol that is already implemented in the RaspberryCommandSender f
 
   
 
-If you want to change this protocol, you can implement your own in the [RaspberryCommandSender.cs](https://github.com/obkaul/VRTactileDraw/tree/main/assets/patterndesigner/scripts/controller/raspberrycommandsender.cs)
+If you want to change this protocol, you can implement your own in the [RaspberryCommandSender.cs](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/patterndesigner/scripts/controller/raspberrycommandsender.cs)
 
 
 ## Instructions on model usage
@@ -54,29 +56,29 @@ If you want to change this protocol, you can implement your own in the [Raspberr
 After downloading all required software and the project itself, you can open the project with Unity.
 There are four presets already imported into the project:
 * A full body model
-![FullBodyModel](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/FullBodyModel.png)
+![FullBodyModel](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/FullBodyModel.png)
 * MultiWave full-body model
-![FullBodyModelMW](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/FullBodyModelMW.png)
+![FullBodyModelMW](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/FullBodyModelMW.png)
 * HapticHead full-body model
-![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/FullBodyModelHH.png)
+![FullBodyModelHH](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/FullBodyModelHH.png)
 * Arm model
-![ArmModel](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/ArmModel.png)
+![ArmModel](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/ArmModel.png)
 
 To use one of the already imported presets, activate it in Unity while disabling all the others.
 
 ### Editing the default presets
 If you want to add more actuators, remove actuators or edit the position of them on the model, do so with Unity. Drag the actuators where you wish for them to be positioned and make sure they are not inside of the model. On starting the application, the actuators will snap to the model. 
 **Important:** Give each actuator a unique ID in Unity! Setting an actuator id can be done in the Inspector:
-![VibratorId](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/VibratorId.png)
+![VibratorId](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/VibratorId.png)
 You can choose the actuator IDs freely. However, the IDs have to be distinct.
 
 ### Importing your own models
 If you have a model, you can [import](https://docs.unity3d.com/Manual/ImportingAssets.html) it via Unity and place it in the work area. Ensure that your model has a Mesh Renderer, Mesh Collider, and uses the Intensity Display script.
-![Components](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/model_components.png)
+![Components](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/model_components.png)
  Each model has its own ActuatorHolder in which all the actuators are positioned:
-![ActuatorHolder](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/ActuatorHolder.png)
+![ActuatorHolder](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/ActuatorHolder.png)
 Additionally, the ActuatorHolder has the VibratorMesh script attached to it.
-![ActuatorHolderScript](https://github.com/obkaul/VRTactileDraw/tree/main/assets/ExamplesAndImages/ActuatorHolderScript.png)
+![ActuatorHolderScript](https://github.com/obkaul/VRTactileDraw/blob/main/Assets/ExamplesAndImages/ActuatorHolderScript.png)
 ### Adding actuators to your model
 Use the Actuator.prefab to add actuators to your model's ActuatorHolder and drag them in position via Unity's scene viewer. The snapping is done automatically on start. Ensure the actuators are not inside your model and each actuator has a unique ID.
 
@@ -92,16 +94,15 @@ After creating or opening the TP to use, the selected model with the actuators w
 ## Other
 Due to the current project structure, you have to ensure that the PaintMode is disabled in Unity on start as the project will crash otherwise.
   
-  
 
 ## Authors
-Oliver Beren Kaul([kaul@hci.uni-hannover.de](mailto:kaul@hci.uni-hannover.de))
-Michael Rohs
-Andreas Domin
-Benjamin Simon
-Maximilian Schrapel
+* Oliver Beren Kaul
+* Michael Rohs
+* Andreas Domin
+* Benjamin Simon
+* Maximilian Schrapel
 
 Human-Computer Interaction Group, Leibniz University Hannover, Hannover, Germany
 
 ## Contact
-Oliver Beren Kaul([beren@kaul.me](mailto:beren@kaul.me))
+Oliver Beren Kaul - [beren@kaul.me](mailto:beren@kaul.me)
