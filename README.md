@@ -100,7 +100,7 @@ After creating or opening a TP to modify, the selected model with the actuators 
 
 ## Project Links
 * Issues: https://github.com/obkaul/VRTactileDraw/issues
-* Paper: TODO include paper link
+* Paper: A preliminary paper version and video figure can be found at www.kaul.me in the projects section.
 
 ## Other
 Due to the current project structure, you have to ensure that the PaintMode is disabled in Unity on start as the project will crash otherwise.
